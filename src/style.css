@@ -1,1 +1,39 @@
-/* css */
+.titulo {
+    font-size: 30px;
+    text-align: center;
+  
+  }
+  
+  nav {
+    display: inline-block;
+    margin: 10px;
+  }
+  
+  .deseja-cifrar{
+    border: 10px #000000 solid ;
+  }
+  .deseja-decifrar{
+    border: 10px #000000 solid ;
+  }
+  
+  .caixa-cifrar {
+    border: 10px #000000 solid;
+  }
+  
+  .caixa-decifrar {
+    border: 10px #000000 solid;
+  }
+  
+  #texto-cifrar{
+    border: 3px red solid;
+    margin: 10px;
+  }
+  
+  #texto-decifrar{
+    border: 3px red solid;
+    margin: 10px;
+  }
+
+  #quantas-posicoes {
+    border: 3px red solid;
+    margin: 10px;

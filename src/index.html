@@ -1,14 +1,50 @@
-<!DOCTYPE html>
+<DOCTYPE!>
 <html>
 <head>
   <meta charset="utf-8">
+
   <title>Caesar Cipher</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div id="root">
-    <h1>Caesar Cipher!</h1>
-  </div>
-  <script src="index.js" type="module"></script>
+  <header class="titulo">
+      <h1>Bilhetes Secretos</h1>
+      </header> 
+    <nav>
+      <section class="deseja-cifrar">
+        <h2 a href = "#texto-cifrar">Clique aqui se deseja cifrar um bilhete</h2>
+        
+      </section>
+
+      <section class="deseja-decifrar">
+        <h2>Clique aqui se deseja decifrar um bilhete</h2>
+        
+      </section>
+      
+      <section class="caixa-cifrar">
+         
+          <h3>Digite aqui seu texto a ser cifrado</h3>
+          <label for="textoCifrar"></label>
+          <input id="textoCifrar" type="string">
+          <h3>Indique quantas posições você deseja deslocar para a sua cifra</h3>
+          <lbel for="quantasPosicoes"></label>
+          <input id="quantasPosicoes" type="number">
+          <button id="cifrar" onclick="cifrarTexto()">Cifrar</button>
+          <h4 id="espaco"></h4>
+         
+      </section>
+
+      <section class="caixa-decifrar">
+        <h3>Digite aqui seu texto a ser decifrado</h3>
+        <label for="texto-decifrar"></label>
+        <input id="texto-decifrar" type="string">
+        <h3>Indique quantas posições você deseja deslocar para a sua cifra</h3>
+        <label for="quantas-posicoes"></label>
+        <input id="quantas-posicoes" type="number">
+        <button id="decifrar">Decifrar</button>
+      </section>
+    </nav>
+  <script src="index.js" ></script>
 </body>
 </html>
+
