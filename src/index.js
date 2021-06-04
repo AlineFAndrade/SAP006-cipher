@@ -1,19 +1,42 @@
 const letras ="ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 
-//document.querySelector('#texto-cifrar')
+
 
 
 function cifrarTexto (){
-  let textoImput = textoCifrar.value
-  let valDesl = quantasPosicoes.value
+  let textoImputC = textoCifrar.value
 
-  document.getElementById ("espaco").innerHTML=letras.indexOf(textoImput) + valDesl
+  let palavraDividida = textoImputC.split("")
+  let palavraCifrada = ""
+  for (i=0; i < palavraDividida.length; i++){
+    let valDeslC = quantasPosicoesC.value % 26
+    let  numDeslocadoC =  (letras.indexOf(palavraDividida[i]) + valDeslC) % 26
+    let  numEmLetraC = letras.charAt(numDeslocadoC)
+    palavraCifrada = palavraCifrada + numEmLetraC
+   
+  }
+  document.getElementById ("espacoC").innerHTML=palavraCifrada
 }
 
+function decifrarTexto (){
+    let textoImputD = textoDecifrar.value
+    let palavraDividida = textoImputD.split("")
+    let palavraDecifrada = ""
+    for (i=0; i < palavraDividida.length; i++){
+     let valDeslD = quantasPosicoesD.value
+     let  numDeslocadoD =  (letras.indexOf(textoImputD) - valDeslD) 
+    if (numDeslocadoD < 0)
+        numDeslocadoD = numDeslocadoD * -1
+        numDeslocadoD = numDeslocadoD % 26     
+    let  numEmLetraD = letras.charAt(numDeslocadoD) 
+    palavraDecifrada = palavraDecifrada + numEmLetraD
+   
+    }
+    
+    document.getElementById ("espacoD").innerHTML=palavraDecifrada
+  }
+  
 
-
-//A  B  C  D  E  F  G  H  I  J   K  L  M  N  O  P  Q  R  S  T  U  V  W  X  Y  Z  //
-//0  1  2  3  4  5  6  7  8  9  10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 
 
 
 
