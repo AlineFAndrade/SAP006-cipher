@@ -1,8 +1,5 @@
 const letras ="ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 
-
-
-
 function cifrarTexto (){
   let textoImputC = textoCifrar.value
 
@@ -24,7 +21,7 @@ function decifrarTexto (){
     let palavraDecifrada = ""
     for (i=0; i < palavraDividida.length; i++){
      let valDeslD = quantasPosicoesD.value
-     let  numDeslocadoD =  (letras.indexOf(textoImputD) - valDeslD) 
+     let  numDeslocadoD =  (letras.indexOf(palavraDividida[i]) - valDeslD) 
     if (numDeslocadoD < 0)
         numDeslocadoD = numDeslocadoD * -1
         numDeslocadoD = numDeslocadoD % 26     
