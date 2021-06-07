@@ -1,4 +1,4 @@
-<DOCTYPE!>
+<!DOCTYPE HTML>
 <html>
 <head>
   <meta charset="utf-8">
@@ -18,8 +18,8 @@
       Para interpretar as mensagens corretamente, é preciso o valor da Chave de Deslocamento. Essa chave se trata de quantas posições o alfabeto será deslocado para trocar as letras.
       Dessa forma, é essencial que o destinatário tenha essa Chave de Deslocamento. Ainda que nos dias de hoje a CIfra de César não seja mais a forma de criptografia mais segura, caso alguém queira descobrir sua mensagem sem a Chave de Deslocamento, ele perderá algum tempo tentando manualmente as possibilidades.       
       Teste abaixo como funciona na prática, essa milenar forma de trocar mensagens secretas.
-      
     </p>
+
   </main>
   <nav>
     <section class="deseja-cifrar">
@@ -37,7 +37,7 @@
       <h3>Indique quantas posições você deseja deslocar para a sua cifra</h3>
       <label for="quantasPosicoesC"></label>
       <input id="quantasPosicoesC" type="number">
-      <button id="cifrar" onclick="cifrarTexto()">Cifrar</button>
+      <button id="cifrar">Cifrar</button>
       <h4 id="espacoC"></h4>
     </section>
 
@@ -48,11 +48,11 @@
       <h3>Indique quantas posições você deseja deslocar para a sua cifra</h3>
       <label for="quantasPosicoesD"></label>
       <input id="quantasPosicoesD" type="number">
-      <button id="decifrar" onclick="decifrarTexto()">Decifrar</button>
+      <button id="decifrar">Decifrar</button>
       <h4 id="espacoD"></h4>
     </section>
   </nav>
-  <script src="index.js" ></script>
+  <script src="index.js" type="module"></script>
 </body>
 </html>
 

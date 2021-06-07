@@ -1,51 +1,16 @@
-const letras ="ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+import cipher from "./cipher.js"
 
-function cifrarTexto (){
-  let textoImputC = textoCifrar.value
+document.getElementById("cifrar").onclick = cifrarTexto
+document.getElementById("decifrar").onclick = decifrarTexto
 
-  let palavraDividida = textoImputC.split("")
-  let palavraCifrada = ""
-  for (i=0; i < palavraDividida.length; i++){
-    let valDeslC = quantasPosicoesC.value % 26
-    let  numDeslocadoC =  (letras.indexOf(palavraDividida[i]) + valDeslC) % 26
-    let  numEmLetraC = letras.charAt(numDeslocadoC)
-    palavraCifrada = palavraCifrada + numEmLetraC
-   
-  }
-  document.getElementById ("espacoC").innerHTML=palavraCifrada
+function cifrarTexto() {
+  let offset = document.getElementById("quantasPosicoesC").value
+  let textoCifrar = document.getElementById("textoCifrar").value
+  document.getElementById("espacoC").innerHTML = cipher.encode(offset, textoCifrar)
 }
 
-function decifrarTexto (){
-    let textoImputD = textoDecifrar.value
-    let palavraDividida = textoImputD.split("")
-    let palavraDecifrada = ""
-    for (i=0; i < palavraDividida.length; i++){
-     let valDeslD = quantasPosicoesD.value
-     let  numDeslocadoD =  (letras.indexOf(palavraDividida[i]) - valDeslD) 
-    if (numDeslocadoD < 0)
-        numDeslocadoD = numDeslocadoD * -1
-        numDeslocadoD = numDeslocadoD % 26     
-    let  numEmLetraD = letras.charAt(numDeslocadoD) 
-    palavraDecifrada = palavraDecifrada + numEmLetraD
-   
-    }
-    
-    document.getElementById ("espacoD").innerHTML=palavraDecifrada
-  }
-  
-
-
-
-
-
-
-
-
-
-
-//const letras = "ABCDEFGHIJKLMNO
-//defined                        
-
-//import cipher from './cipher.js';//
-
-//console.log(cipher);//
+function decifrarTexto() {
+  let offset = document.getElementById("quantasPosicoesD").value
+  let textoDecifrar = document.getElementById("textoDecifrar").value
+  document.getElementById("espacoD").innerHTML = cipher.decode(offset, textoDecifrar)
+}
