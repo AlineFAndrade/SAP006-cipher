@@ -1,39 +1,86 @@
-.titulo {
-    font-size: 30px;
-    text-align: center;
+*{
+  box-sizing: border-box;
+}
+body{
+  background-color: #c0d6dfb4;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+header {
+  margin: 30;
+  width: 100%;
+}
+header img {
+  width: 100%;
+
+}
+.titulo h1{
+  font-size: 3rem;
+  font-weight: 300;
+  margin: 20px;
+  text-align: center;
+  color: #720026;
   
-  }
-  
-  nav {
-    display: inline-block;
-    margin: 10px;
-  }
-  
-  .deseja-cifrar{
-    border: 10px #000000 solid ;
-  }
-  .deseja-decifrar{
-    border: 10px #000000 solid ;
-  }
-  
-  .caixa-cifrar {
-    border: 10px #000000 solid;
-  }
-  
-  .caixa-decifrar {
-    border: 10px #000000 solid;
-  }
-  
-  #texto-cifrar{
-    border: 3px red solid;
-    margin: 10px;
-  }
-  
-  #texto-decifrar{
-    border: 3px red solid;
-    margin: 10px;
   }
 
-  #quantas-posicoes {
-    border: 3px red solid;
-    margin: 10px;
+main {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.cifradora {
+  width: 50%;
+  padding:10px 15px 10px 10px;
+  
+
+}
+.apresentacao {
+  width: 50%;
+  padding:10px 10px 10px 15px;
+  
+}
+figure { 
+  font-style: italic;
+  text-align: center;
+  margin: 0;
+  }
+figure img {
+  width: 50%;
+}
+  
+p {
+  color: blue;
+  font-weight: 300;
+}
+  
+.caixa-cifrar {
+  border: 10px #720026 solid;
+  margin-bottom: 20px;
+  padding: 30px;
+  height: 500px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+  
+.caixa-decifrar {
+  border: 10px #720026 solid;
+  padding: 5px;
+  height: 500px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+input {
+  width: 80%;
+  height: 50px;
+  margin:0 auto;
+}
+button {
+  display: block;
+  margin: 10px auto 0;
+}
+h4{
+  background-color: rgba(207, 208, 219, 0.473);
+  padding: 20px;
+}
