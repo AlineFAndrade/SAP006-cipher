@@ -14,7 +14,7 @@ const cipher = {
         numEmLetraC = letrasm.charAt(numDeslocadoC)
       }
       else if (!isNaN(parseInt(palavraDividida[i]))) { //ele é um número, só que não? ou ele é um o contrário de um não número?//
-        throw new TypeError("Digite apenas letras e símbolos, não números")
+        alert("Digite apenas letras e símbolos, não números")
       }
       else (
         numEmLetraC = palavraDividida[i]
@@ -43,7 +43,7 @@ const cipher = {
         numEmLetraD = letrasm.charAt(numDeslocadoD)
       }
       else if (!isNaN(parseInt(palavraDividida[i]))) { //ele é um número, só que não? ou ele é um o contrário de um não número?//
-        throw new TypeError("Digite apenas letras e símbolos, não números")
+        alert("Digite apenas letras e símbolos, não números")
       }
       else {
         numEmLetraD = palavraDividida[i]

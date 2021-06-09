@@ -106,28 +106,15 @@ JavaScript como ferramentas.
 * [ ] Criar protótipos para obter feedback e iterar.
 * [ ] Aplicar os princípios de desenho visual (contraste, alinhamento, hierarquia)
 
-## 4. Considerações gerais
 
-* A equipe de coaches te dará um tempo sugerido. Lembre-se que cada uma aprende em um ritmo diferente.
-* O projeto será feito individualmente.
-* O projeto será entregue subindo o seu código no GitHub (commit/push) e o
-  deploy será feito no GitHub Pages. Se não sabe o que é o GitHub, não se
-  preocupe, você aprenderá durante o projeto.
-
-## 5. Critérios de aceitação mínimos do projeto
-
-Use o alfabeto simples (somente maiúsculas e sem ç):
-
-* A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
 
 ### Definição do produto
 
-No README.md, escreva como você definiu seu usuário e qual foi o processo para
-definir o produto final a nível de experiência e interface.
-
 * Quem são os principais usuário do produto?
-* Quais são os objetivos do usuário em relação com o produto?
+Pessoas interessadas em história, Roma e criptografia simples.
+
 * Como você acredita que o produto está resolvendo os problemas do usuário?
+A página traz uma explicação suscinta sobre o que é a Cifra de César e a funcionalidade para o usuário conhecer na prática.
 
 ### Interface do usuário (UI)
 
