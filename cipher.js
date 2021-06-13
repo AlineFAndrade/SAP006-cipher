@@ -3,14 +3,20 @@ const cipher = {
     let palavraDividida = string.split("")
     let palavraCifrada = ""
     for (let i = 0; i < palavraDividida.length; i++) {
-      let valDeslC = offset % 26
+      //let valDeslC = offset % 26
       let numEmLetraC;
-      if (palavraDividida[i].charCodeAt(0) >= 65 && palavraDividida[i].charCodeAt(0) <= 91) {
-        let numDeslocadoC = (letras.indexOf(palavraDividida[i]) + valDeslC) % 26
+      if (palavraDividida[i].charCodeAt(0) >= 65 && palavraDividida[i].charCodeAt(0) <= 90) {
+        let numDeslocadoC = (letras.indexOf(palavraDividida[i]) + offset)
+        if (numDeslocadoC < 0)
+          numDeslocadoC = 26 - (numDeslocadoC * -1) % 26
+        numDeslocadoC = numDeslocadoC % 26
         numEmLetraC = letras.charAt(numDeslocadoC)
       }
       else if (palavraDividida[i].charCodeAt(0) >= 97 && palavraDividida[i].charCodeAt(0) <= 123) {
-        let numDeslocadoC = (letrasm.indexOf(palavraDividida[i]) + valDeslC) % 26
+        let numDeslocadoC = (letrasm.indexOf(palavraDividida[i]) + offset)
+        if (numDeslocadoC < 0)
+          numDeslocadoC = 26 - (numDeslocadoC * -1) % 26
+        numDeslocadoC = numDeslocadoC % 26
         numEmLetraC = letrasm.charAt(numDeslocadoC)
       }
       else if (!isNaN(parseInt(palavraDividida[i]))) { //ele é um número, só que não? ou ele é um o contrário de um não número?//
@@ -29,7 +35,7 @@ const cipher = {
     let palavraDecifrada = ""
     for (let i = 0; i < palavraDividida.length; i++) {
       let numEmLetraD
-      if (palavraDividida[i].charCodeAt(0) >= 65 && palavraDividida[i].charCodeAt(0) <= 91) {
+      if (palavraDividida[i].charCodeAt(0) >= 65 && palavraDividida[i].charCodeAt(0) <= 90) {
         let numDeslocadoD = (letras.indexOf(palavraDividida[i]) - offset)
         if (numDeslocadoD < 0)
           numDeslocadoD = 26 - (numDeslocadoD * -1) % 26
