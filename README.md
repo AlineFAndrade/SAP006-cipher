@@ -325,3 +325,12 @@ Essa seção é para te ajudar a ter um controle do que você precisa completar.
 * [ ] Cifrar/decifrar minúsculas.
 * [ ] Cifrar/decifrar _outros_ caractéres (espaços, pontuação, `ç`, `á`, ...).
 * [ ] Permitir usar `offset` negativo.
+
+README
+* Quem são os principais usuário do produto?
+Pessoas interessadas em história, Roma e criptografia simples.
+
+* Como você acredita que o produto está resolvendo os problemas do usuário?
+A página traz uma explicação suscinta sobre o que é a Cifra de César e a funcionalidade para o usuário conhecer na prática.
+
+* A intenção era uma interface de interação simples e objetiva, com campos de code e decode separados, para o usuário experimentar e "tirar a prova", caso queira. Dessa forma também contribui para o usuário copiar as mensagens cifradas e decifradas com os amigos, experimentando como na época de Julio César que se comunicava com seus generais dessa forma. 
