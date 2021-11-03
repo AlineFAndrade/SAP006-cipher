@@ -3,7 +3,6 @@ const cipher = {
     let palavraDividida = string.split("")
     let palavraCifrada = ""
     for (let i = 0; i < palavraDividida.length; i++) {
-      //let valDeslC = offset % 26
       let numEmLetraC;
       if (palavraDividida[i].charCodeAt(0) >= 65 && palavraDividida[i].charCodeAt(0) <= 90) {
         let numDeslocadoC = (letras.indexOf(palavraDividida[i]) + offset)
@@ -19,7 +18,7 @@ const cipher = {
         numDeslocadoC = numDeslocadoC % 26
         numEmLetraC = letrasm.charAt(numDeslocadoC)
       }
-      else if (!isNaN(parseInt(palavraDividida[i]))) { //ele é um número, só que não? ou ele é um o contrário de um não número?//
+      else if (!isNaN(parseInt(palavraDividida[i]))) {
         alert("Digite apenas letras e símbolos, não números")
         throw new TypeError("Digite apenas letras e símbolos, não números")
       }
@@ -49,7 +48,7 @@ const cipher = {
         numDeslocadoD = numDeslocadoD % 26
         numEmLetraD = letrasm.charAt(numDeslocadoD)
       }
-      else if (!isNaN(parseInt(palavraDividida[i]))) { //ele é um número, só que não? ou ele é um o contrário de um não número?//
+      else if (!isNaN(parseInt(palavraDividida[i]))) {
         alert("Digite apenas letras e símbolos, não números")
         throw new TypeError("Digite apenas letras e símbolos, não números")
       }
@@ -64,6 +63,3 @@ const cipher = {
 const letras = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 const letrasm = "abcdefghijklmnopqrstuvwxyz"
 export default cipher;
-
-
-
