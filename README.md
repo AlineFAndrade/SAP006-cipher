@@ -1,11 +1,6 @@
 # Cifra de César - Primeiro projeto Bootcamp Laboratória
 
-## Índice
-
-* [1. Prefácio](#1-prefácio)
-* [3. Objetivos de aprendizagem](#3-objetivos-de-aprendizagem)
-
-***
+Confira em: https://alinefandrade.github.io/SAP006-cipher/
 
 ## 1. Prefácio
 
